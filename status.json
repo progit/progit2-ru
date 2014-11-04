@@ -68,11 +68,11 @@
       "sections/notes.asc": 0,
       "sections/replace.asc": 0,
       "sections/rerere.asc": 0,
-      "sections/reset.asc": 0,
+      "sections/reset.asc": 100,
       "sections/revision-selection.asc": 0,
       "sections/rewriting-history.asc": 0,
       "sections/searching.asc": 100,
-      "sections/signing.asc": 0,
+      "sections/signing.asc": 100,
       "sections/stashing-cleaning.asc": 0,
       "sections/submodules.asc": 0,
       "sections/subtree-merges.asc": 0
@@ -119,7 +119,7 @@
     "B-embedding-git": {
       "1-embedding-git.asc": 90,
       "sections/command-line.asc": 90,
-      "sections/jgit.asc": 0,
+      "sections/jgit.asc": 90,
       "sections/libgit2.asc": 90
     },
     "C-git-commands": {

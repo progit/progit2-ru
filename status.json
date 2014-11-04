@@ -108,7 +108,7 @@
       "sections/transfer-protocols.asc": 0
     },
     "A-git-in-other-environments": {
-      "1-git-other-environments.asc": 0,
+      "1-git-other-environments.asc": 90,
       "sections/bash.asc": 0,
       "sections/eclipse.asc": 0,
       "sections/guis.asc": 0,

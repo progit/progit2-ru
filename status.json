@@ -14,7 +14,7 @@
       "sections/installing.asc": 0
     },
     "02-git-basics": {
-      "1-git-basics.asc": 0,
+      "1-git-basics.asc": 100,
       "sections/aliases.asc": 0,
       "sections/getting-a-repository.asc": 0,
       "sections/recording-changes.asc": 0,
@@ -71,7 +71,7 @@
       "sections/reset.asc": 100,
       "sections/revision-selection.asc": 0,
       "sections/rewriting-history.asc": 0,
-      "sections/searching.asc": 0,
+      "sections/searching.asc": 100,
       "sections/signing.asc": 100,
       "sections/stashing-cleaning.asc": 0,
       "sections/submodules.asc": 0,
@@ -97,7 +97,7 @@
       "sections/import-tfs.asc": 0
     },
     "10-git-internals": {
-      "1-git-internals.asc": 0,
+      "1-git-internals.asc": 100,
       "sections/environment.asc": 0,
       "sections/maintenance.asc": 0,
       "sections/objects.asc": 0,
@@ -108,7 +108,7 @@
       "sections/transfer-protocols.asc": 0
     },
     "A-git-in-other-environments": {
-      "1-git-other-environments.asc": 0,
+      "1-git-other-environments.asc": 90,
       "sections/bash.asc": 0,
       "sections/eclipse.asc": 0,
       "sections/guis.asc": 0,
@@ -123,7 +123,7 @@
       "sections/libgit2.asc": 90
     },
     "C-git-commands": {
-      "1-git-commands.asc": 0
+      "1-git-commands.asc": 90
     }
   }
 }

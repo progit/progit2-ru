@@ -66,7 +66,7 @@
       "sections/debugging.asc": 0,
       "sections/interactive-staging.asc": 0,
       "sections/replace.asc": 0,
-      "sections/rerere.asc": 0,
+      "sections/rerere.asc": 100,
       "sections/reset.asc": 100,
       "sections/revision-selection.asc": 0,
       "sections/rewriting-history.asc": 0,

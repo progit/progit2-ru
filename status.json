@@ -113,7 +113,7 @@
       "sections/guis.asc": 0,
       "sections/powershell.asc": 0,
       "sections/visualstudio.asc": 0,
-      "sections/zsh.asc": 0
+      "sections/zsh.asc": 90
     },
     "B-embedding-git": {
       "1-embedding-git.asc": 90,

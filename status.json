@@ -77,7 +77,7 @@
       "sections/subtree-merges.asc": 0
     },
     "08-customizing-git": {
-      "1-customizing-git.asc": 0,
+      "1-customizing-git.asc": 100,
       "sections/attributes.asc": 0,
       "sections/config.asc": 0,
       "sections/hooks.asc": 0,
@@ -112,7 +112,7 @@
       "sections/eclipse.asc": 90,
       "sections/guis.asc": 90,
       "sections/powershell.asc": 0,
-      "sections/visualstudio.asc": 0,
+      "sections/visualstudio.asc": 100,
       "sections/zsh.asc": 90
     },
     "B-embedding-git": {

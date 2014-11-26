@@ -111,7 +111,7 @@
       "sections/bash.asc": 90,
       "sections/eclipse.asc": 90,
       "sections/guis.asc": 90,
-      "sections/powershell.asc": 0,
+      "sections/powershell.asc": 100,
       "sections/visualstudio.asc": 100,
       "sections/zsh.asc": 90
     },

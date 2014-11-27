@@ -102,7 +102,7 @@
       "sections/objects.asc": 90,
       "sections/packfiles.asc": 0,
       "sections/plumbing-porcelain.asc": 90,
-      "sections/refs.asc": 0,
+      "sections/refs.asc": 90,
       "sections/refspec.asc": 0,
       "sections/transfer-protocols.asc": 0
     },

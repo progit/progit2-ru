@@ -100,7 +100,7 @@
       "sections/environment.asc": 0,
       "sections/maintenance.asc": 0,
       "sections/objects.asc": 90,
-      "sections/packfiles.asc": 0,
+      "sections/packfiles.asc": 100,
       "sections/plumbing-porcelain.asc": 90,
       "sections/refs.asc": 90,
       "sections/refspec.asc": 0,

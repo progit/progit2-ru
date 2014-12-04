@@ -103,7 +103,7 @@
       "sections/packfiles.asc": 90,
       "sections/plumbing-porcelain.asc": 90,
       "sections/refs.asc": 90,
-      "sections/refspec.asc": 0,
+      "sections/refspec.asc": 90,
       "sections/transfer-protocols.asc": 0
     },
     "A-git-in-other-environments": {

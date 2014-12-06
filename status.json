@@ -65,7 +65,7 @@
       "sections/credentials.asc": 0,
       "sections/debugging.asc": 100,
       "sections/interactive-staging.asc": 0,
-      "sections/replace.asc": 0,
+      "sections/replace.asc": 100,
       "sections/rerere.asc": 100,
       "sections/reset.asc": 100,
       "sections/revision-selection.asc": 0,

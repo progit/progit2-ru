@@ -104,7 +104,7 @@
       "sections/plumbing-porcelain.asc": 90,
       "sections/refs.asc": 90,
       "sections/refspec.asc": 90,
-      "sections/transfer-protocols.asc": 0
+      "sections/transfer-protocols.asc": 90
     },
     "A-git-in-other-environments": {
       "1-git-other-environments.asc": 90,

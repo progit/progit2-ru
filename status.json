@@ -98,7 +98,7 @@
     "10-git-internals": {
       "1-git-internals.asc": 100,
       "sections/environment.asc": 0,
-      "sections/maintenance.asc": 0,
+      "sections/maintenance.asc": 90,
       "sections/objects.asc": 90,
       "sections/packfiles.asc": 90,
       "sections/plumbing-porcelain.asc": 90,

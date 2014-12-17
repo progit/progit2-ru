@@ -84,7 +84,7 @@
       "sections/policy.asc": 0
     },
     "09-git-and-other-scms": {
-      "1-git-and-other-scms.asc": 0,
+      "1-git-and-other-scms.asc": 100,
       "sections/client-hg.asc": 0,
       "sections/client-p4.asc": 0,
       "sections/client-svn.asc": 0,

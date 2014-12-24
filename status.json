@@ -70,7 +70,7 @@
       "sections/replace.asc": 100,
       "sections/rerere.asc": 100,
       "sections/reset.asc": 100,
-      "sections/revision-selection.asc": 0,
+      "sections/revision-selection.asc": 100,
       "sections/rewriting-history.asc": 0,
       "sections/searching.asc": 100,
       "sections/signing.asc": 100,

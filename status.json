@@ -74,7 +74,7 @@
       "sections/rewriting-history.asc": 0,
       "sections/searching.asc": 100,
       "sections/signing.asc": 100,
-      "sections/stashing-cleaning.asc": 0,
+      "sections/stashing-cleaning.asc": 100,
       "sections/submodules.asc": 0,
       "sections/subtree-merges.asc": 100
     },

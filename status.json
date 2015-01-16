@@ -38,13 +38,13 @@
       "sections/git-daemon.asc": 90,
       "sections/generating-ssh-key.asc": 100,
       "sections/git-daemon.asc": 90,
-      "sections/git-on-a-server.asc": 0,
-      "sections/gitlab.asc": 0,
+      "sections/git-on-a-server.asc": 90,
+      "sections/gitlab.asc": 90,
       "sections/gitweb.asc": 90,
       "sections/hosted.asc": 90,
-      "sections/protocols.asc": 0,
-      "sections/setting-up-server.asc": 0,
-      "sections/smart-http.asc": 0
+      "sections/protocols.asc": 90,
+      "sections/setting-up-server.asc": 90,
+      "sections/smart-http.asc": 90
     },
     "05-distributed-git": {
       "1-distributed-git.asc": 100,

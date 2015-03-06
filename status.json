@@ -89,7 +89,7 @@
       "1-git-and-other-scms.asc": 100,
       "sections/client-hg.asc": 90,
       "sections/client-p4.asc": 0,
-      "sections/client-svn.asc": 0,
+      "sections/client-svn.asc": 90,
       "sections/client-tfs.asc": 0,
       "sections/import-custom.asc": 0,
       "sections/import-hg.asc": 0,

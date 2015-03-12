@@ -21,15 +21,15 @@
       "sections/remotes.asc": 0,
       "sections/tagging.asc": 0,
       "sections/undoing.asc": 0,
-      "sections/viewing-history.asc": 0
+      "sections/viewing-history.asc": 100
     },
     "03-git-branching": {
-      "1-git-branching.asc": 0,
-      "sections/basic-branching-and-merging.asc": 0,
-      "sections/branch-management.asc": 0,
-      "sections/nutshell.asc": 0,
+      "1-git-branching.asc": 100,
+      "sections/basic-branching-and-merging.asc": 100,
+      "sections/branch-management.asc": 90,
+      "sections/nutshell.asc": 90,
       "sections/rebasing.asc": 0,
-      "sections/remote-branches.asc": 0,
+      "sections/remote-branches.asc": 90,
       "sections/workflows.asc": 0
     },
     "04-git-server": {
@@ -71,11 +71,11 @@
       "sections/rerere.asc": 100,
       "sections/reset.asc": 100,
       "sections/revision-selection.asc": 100,
-      "sections/rewriting-history.asc": 0,
+      "sections/rewriting-history.asc": 100,
       "sections/searching.asc": 100,
       "sections/signing.asc": 100,
       "sections/stashing-cleaning.asc": 100,
-      "sections/submodules.asc": 0,
+      "sections/submodules.asc": 100,
       "sections/subtree-merges.asc": 100
     },
     "08-customizing-git": {
@@ -88,13 +88,13 @@
     "09-git-and-other-scms": {
       "1-git-and-other-scms.asc": 100,
       "sections/client-hg.asc": 90,
-      "sections/client-p4.asc": 0,
-      "sections/client-svn.asc": 0,
-      "sections/client-tfs.asc": 0,
+      "sections/client-p4.asc": 90,
+      "sections/client-svn.asc": 90,
+      "sections/client-tfs.asc": 90,
       "sections/import-custom.asc": 0,
-      "sections/import-hg.asc": 0,
-      "sections/import-p4.asc": 0,
-      "sections/import-svn.asc": 0,
+      "sections/import-hg.asc": 90,
+      "sections/import-p4.asc": 90,
+      "sections/import-svn.asc": 90,
       "sections/import-tfs.asc": 0
     },
     "10-git-internals": {

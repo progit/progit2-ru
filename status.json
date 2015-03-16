@@ -95,7 +95,7 @@
       "sections/import-hg.asc": 90,
       "sections/import-p4.asc": 90,
       "sections/import-svn.asc": 90,
-      "sections/import-tfs.asc": 0
+      "sections/import-tfs.asc": 90
     },
     "10-git-internals": {
       "1-git-internals.asc": 100,

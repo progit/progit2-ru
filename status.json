@@ -34,8 +34,6 @@
     },
     "04-git-server": {
       "1-git-server.asc": 100,
-      "sections/generating-ssh-key.asc": 90,
-      "sections/git-daemon.asc": 90,
       "sections/generating-ssh-key.asc": 100,
       "sections/git-daemon.asc": 90,
       "sections/git-on-a-server.asc": 90,

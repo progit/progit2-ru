@@ -3,6 +3,7 @@ output
 .vscode
 
 # build artifacts
+Gemfile.lock
 progit.html
 progit.pdf
 progit.pdfmarks

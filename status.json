@@ -47,13 +47,13 @@
     "05-distributed-git": {
       "1-distributed-git.asc": 100,
       "sections/contributing.asc": 0,
-      "sections/distributed-workflows.asc": 0,
-      "sections/maintaining.asc": 0
+      "sections/distributed-workflows.asc": 100,
+      "sections/maintaining.asc": 100
     },
     "06-github": {
       "1-github.asc": 90,
       "sections/1-setting-up-account.asc": 90,
-      "sections/2-contributing.asc": 0,
+      "sections/2-contributing.asc": 100,
       "sections/3-maintaining.asc": 0,
       "sections/4-managing-organization.asc": 0,
       "sections/5-scripting.asc": 0

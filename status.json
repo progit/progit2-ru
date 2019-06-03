@@ -52,9 +52,9 @@
     },
     "06-github": {
       "1-github.asc": 90,
-      "sections/1-setting-up-account.asc": 90,
+      "sections/1-setting-up-account.asc": 100,
       "sections/2-contributing.asc": 100,
-      "sections/3-maintaining.asc": 0,
+      "sections/3-maintaining.asc": 100,
       "sections/4-managing-organization.asc": 0,
       "sections/5-scripting.asc": 0
     },

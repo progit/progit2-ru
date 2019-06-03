@@ -112,7 +112,9 @@
       "sections/eclipse.asc": 90,
       "sections/guis.asc": 90,
       "sections/powershell.asc": 100,
+      "sections/sublimetext.asc": 100,
       "sections/visualstudio.asc": 100,
+      "sections/visualstudiocode.asc": 100,
       "sections/zsh.asc": 90
     },
     "B-embedding-git": {

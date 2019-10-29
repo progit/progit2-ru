@@ -103,7 +103,7 @@ GEM
     rake (12.3.1)
     retriable (3.1.1)
     ruby-rc4 (0.1.5)
-    rubyzip (1.2.1)
+    rubyzip (2.0.0)
     safe_yaml (1.0.4)
     sawyer (0.8.1)
       addressable (>= 2.3.5, < 2.6)

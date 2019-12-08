@@ -55,7 +55,7 @@
       "sections/1-setting-up-account.asc": 100,
       "sections/2-contributing.asc": 100,
       "sections/3-maintaining.asc": 100,
-      "sections/4-managing-organization.asc": 0,
+      "sections/4-managing-organization.asc": 100,
       "sections/5-scripting.asc": 0
     },
     "07-git-tools": {
@@ -78,9 +78,9 @@
     },
     "08-customizing-git": {
       "1-customizing-git.asc": 100,
-      "sections/attributes.asc": 0,
+      "sections/attributes.asc": 100,
       "sections/config.asc": 100,
-      "sections/hooks.asc": 0,
+      "sections/hooks.asc": 100,
       "sections/policy.asc": 0
     },
     "09-git-and-other-scms": {

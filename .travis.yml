@@ -12,10 +12,10 @@ deploy:
   provider: releases
   file_glob: true
   file:
-  - progit.epub
-  - progit.mobi
-  - progit.pdf
-  - progit.html
+  - progit*.epub
+  - progit*.mobi
+  - progit*.pdf
+  - progit*.html
   skip_cleanup: true
   on:
     tags: true

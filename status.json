@@ -17,8 +17,8 @@
       "1-git-basics.asc": 100,
       "sections/aliases.asc": 100,
       "sections/getting-a-repository.asc": 100,
-      "sections/recording-changes.asc": 99,
-      "sections/remotes.asc": 0,
+      "sections/recording-changes.asc": 100,
+      "sections/remotes.asc": 100,
       "sections/tagging.asc": 100,
       "sections/undoing.asc": 100,
       "sections/viewing-history.asc": 100
@@ -26,23 +26,23 @@
     "03-git-branching": {
       "1-git-branching.asc": 100,
       "sections/basic-branching-and-merging.asc": 100,
-      "sections/branch-management.asc": 90,
-      "sections/nutshell.asc": 90,
-      "sections/rebasing.asc": 0,
-      "sections/remote-branches.asc": 90,
-      "sections/workflows.asc": 0
+      "sections/branch-management.asc": 100,
+      "sections/nutshell.asc": 100,
+      "sections/rebasing.asc": 100,
+      "sections/remote-branches.asc": 100,
+      "sections/workflows.asc": 100
     },
     "04-git-server": {
       "1-git-server.asc": 100,
       "sections/generating-ssh-key.asc": 100,
-      "sections/git-daemon.asc": 90,
-      "sections/git-on-a-server.asc": 90,
-      "sections/gitlab.asc": 90,
-      "sections/gitweb.asc": 90,
-      "sections/hosted.asc": 90,
-      "sections/protocols.asc": 90,
-      "sections/setting-up-server.asc": 90,
-      "sections/smart-http.asc": 90
+      "sections/git-daemon.asc": 100,
+      "sections/git-on-a-server.asc": 100,
+      "sections/gitlab.asc": 100,
+      "sections/gitweb.asc": 100,
+      "sections/hosted.asc": 100,
+      "sections/protocols.asc": 100,
+      "sections/setting-up-server.asc": 100,
+      "sections/smart-http.asc": 100
     },
     "05-distributed-git": {
       "1-distributed-git.asc": 100,
@@ -51,7 +51,7 @@
       "sections/maintaining.asc": 100
     },
     "06-github": {
-      "1-github.asc": 90,
+      "1-github.asc": 80,
       "sections/1-setting-up-account.asc": 100,
       "sections/2-contributing.asc": 100,
       "sections/3-maintaining.asc": 100,
@@ -81,14 +81,16 @@
       "sections/attributes.asc": 100,
       "sections/config.asc": 100,
       "sections/hooks.asc": 100,
-      "sections/policy.asc": 0
+      "sections/policy.asc": 100
     },
     "09-git-and-other-scms": {
-      "1-git-and-other-scms.asc": 100,
+      "1-git-and-other-scms.asc": 90,
+      "sections/client-bzr.asc": 90,
       "sections/client-hg.asc": 90,
       "sections/client-p4.asc": 90,
       "sections/client-svn.asc": 90,
       "sections/client-tfs.asc": 90,
+      "sections/import-bzr": 90,
       "sections/import-custom.asc": 90,
       "sections/import-hg.asc": 90,
       "sections/import-p4.asc": 90,

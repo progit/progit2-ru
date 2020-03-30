@@ -126,7 +126,7 @@
       "sections/libgit2.asc": 90
     },
     "C-git-commands": {
-      "1-git-commands.asc": 90
+      "C-git-commands.asc": 90
     }
   }
 }

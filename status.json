@@ -109,21 +109,24 @@
       "sections/transfer-protocols.asc": 90
     },
     "A-git-in-other-environments": {
-      "1-git-other-environments.asc": 90,
-      "sections/bash.asc": 90,
-      "sections/eclipse.asc": 90,
-      "sections/guis.asc": 90,
+      "A-git-in-other-environments.asc": 100,
+      "sections/bash.asc": 100,
+      "sections/eclipse.asc": 100,
+      "sections/guis.asc": 100,
+      "sections/jetbrainsides.asc": 100,
       "sections/powershell.asc": 100,
       "sections/sublimetext.asc": 100,
       "sections/visualstudio.asc": 100,
       "sections/visualstudiocode.asc": 100,
-      "sections/zsh.asc": 90
+      "sections/zsh.asc": 100
     },
     "B-embedding-git": {
-      "1-embedding-git.asc": 90,
-      "sections/command-line.asc": 90,
-      "sections/jgit.asc": 90,
-      "sections/libgit2.asc": 90
+      "1-embedding-git.asc": 100,
+      "sections/command-line.asc": 100,
+      "sections/dulwich.asc": 100,
+      "sections/go-git.asc": 100,
+      "sections/jgit.asc": 100,
+      "sections/libgit2.asc": 100
     },
     "C-git-commands": {
       "C-git-commands.asc": 90

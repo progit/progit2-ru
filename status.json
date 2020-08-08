@@ -101,12 +101,12 @@
       "1-git-internals.asc": 100,
       "sections/environment.asc": 100,
       "sections/maintenance.asc": 100,
-      "sections/objects.asc": 90,
+      "sections/objects.asc": 100,
       "sections/packfiles.asc": 100,
-      "sections/plumbing-porcelain.asc": 90,
-      "sections/refs.asc": 90,
-      "sections/refspec.asc": 90,
-      "sections/transfer-protocols.asc": 90
+      "sections/plumbing-porcelain.asc": 100,
+      "sections/refs.asc": 100,
+      "sections/refspec.asc": 100,
+      "sections/transfer-protocols.asc": 100
     },
     "A-git-in-other-environments": {
       "A-git-in-other-environments.asc": 100,

@@ -1,5 +1,6 @@
 output
 .DS_Store
+.vscode
 
 # build artifacts
 progit.html
@@ -8,4 +9,3 @@ progit.pdfmarks
 progit.epub
 progit-kf8.epub
 progit.mobi
-

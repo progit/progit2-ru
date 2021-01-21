@@ -1,11 +1,13 @@
 output
 .DS_Store
+.vscode
 
 # build artifacts
+Gemfile.lock
 progit.html
 progit.pdf
 progit.pdfmarks
 progit.epub
 progit-kf8.epub
 progit.mobi
-
+contributors.txt

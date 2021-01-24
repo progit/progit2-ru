@@ -10,12 +10,24 @@ namespace :book do
   task :build do
 
     begin
+      lang = "ru"
+      begin
+        l10n_text = open("https://raw.githubusercontent.com/asciidoctor/asciidoctor/master/data/locale/attributes-#{lang}.adoc").read
+        File.open('attributes.asc', 'w') { |file| file.puts l10n_text}
+        progit_txt = File.open('progit.asc').read
+        if not progit_txt.include?("attributes.asc")
+          progit_txt.gsub!('include::book/license.asc', "include::attributes.asc[]\ninclude::book/license.asc")
+          File.open('progit.asc', 'w') {|file| file.puts progit_txt }
+        end
+      rescue
+      end
       version_string = ENV['TRAVIS_TAG'] || `git describe --tags`.chomp
       if version_string.empty?
         version_string = '0'
       end
-      date_string = Time.now.strftime("%Y-%m-%d")
-      params = "--attribute revnumber='#{version_string}' --attribute revdate='#{date_string}'"
+      date_string = Time.now.strftime("%d-%m-%Y")
+      params = "--attribute revnumber='#{version_string}' --attribute revdate='#{date_string}' --attribute lang=#{lang} "
+      
       puts "Generating contributors list"
       `git shortlog -s | grep -v -E "(Straub|Chacon|dependabot)" | cut -f 2- | column -c 96 > book/contributors.txt`
 

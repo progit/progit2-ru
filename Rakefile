@@ -38,7 +38,6 @@ namespace :book do
 
       puts "Generating contributors list"
       `git shortlog -s | grep -v -E "(Straub|Chacon|dependabot)" | cut -f 2- | column -c 96 > book/contributors.txt`
-
       puts "Converting to HTML..."
       `bundle exec asciidoctor #{params} -a data-uri progit.asc`
       puts " -- HTML output at progit.html"
@@ -46,6 +45,8 @@ namespace :book do
       puts " -- Validate HTML file progit.html"
       exec_or_raise('htmlproofer --check-html progit.html')
 
+      puts "Generating contributors list"
+      `git shortlog -s | grep -v -E "(Straub|Chacon|dependabot)" | cut -f 2- | column -c 48 > book/contributors.txt`
       puts "Converting to EPub..."
       `bundle exec asciidoctor-epub3 #{params} progit.asc`
       puts " -- Epub output at progit.epub"
@@ -61,6 +62,8 @@ namespace :book do
       # `bundle exec asciidoctor-epub3 #{params} -a ebook-format=kf8 progit.asc`
       # puts " -- Mobi output at progit.mobi"
 
+      puts "Generating contributors list"
+      `git shortlog -s | grep -v -E "(Straub|Chacon|dependabot)" | cut -f 2- | column -c 88 > book/contributors.txt`
       puts "Converting to PDF... (this one takes a while)"
       `bundle exec asciidoctor-pdf #{params} progit.asc 2>/dev/null`
       puts " -- PDF output at progit.pdf"

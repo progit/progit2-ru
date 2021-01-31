@@ -11,4 +11,4 @@ Gemfile.lock
 *-kf8.epub
 *.mobi
 contributors.txt
-/attributes.asc
+attributes-*

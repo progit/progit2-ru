@@ -1,3 +1,5 @@
+require 'open-uri'
+
 namespace :book do
   def exec_or_raise(command)
     puts `#{command}`
@@ -16,7 +18,7 @@ namespace :book do
         File.open('attributes.asc', 'w') { |file| file.puts l10n_text}
         progit_txt = File.open('progit.asc').read
         if not progit_txt.include?("attributes.asc")
-          progit_txt.gsub!('include::book/license.asc', "include::attributes.asc[]\ninclude::book/license.asc")
+          progit_txt.gsub!(':doctype: book', "include::attributes.asc[]\n:doctype: book")
           File.open('progit.asc', 'w') {|file| file.puts progit_txt }
         end
       rescue
@@ -25,7 +27,7 @@ namespace :book do
       if version_string.empty?
         version_string = '0'
       end
-      date_string = Time.now.strftime("%d-%m-%Y")
+      date_string = Time.now.strftime("%d.%m.%Y")
       params = "--attribute revnumber='#{version_string}' --attribute revdate='#{date_string}' --attribute lang=#{lang} "
       
       puts "Generating contributors list"
@@ -54,6 +56,15 @@ namespace :book do
       puts "Converting to PDF... (this one takes a while)"
       `bundle exec asciidoctor-pdf #{params} progit.asc 2>/dev/null`
       puts " -- PDF output at progit.pdf"
+      
+      begin
+        progit_txt = File.open('progit.asc').read
+        if progit_txt.include?("attributes.asc")
+          progit_txt.gsub!("include::attributes.asc[]\n:doctype: book", ":doctype: book")
+          File.open('progit.asc', 'w') {|file| file.puts progit_txt }
+        end
+      rescue
+      end
 
     end
   end

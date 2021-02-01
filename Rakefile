@@ -15,10 +15,12 @@ namespace :book do
       lang = "ru"
       begin
         locale_file = "attributes-#{lang}.adoc"
-          if not File.exist?(locale_file)
-          puts "Downloading locale attributes file #{lang_file} from asciidoc repo..."
-          l10n_text = URI.open("https://raw.githubusercontent.com/asciidoctor/asciidoctor/master/data/locale/#{locale_file}").read
-          File.open(locale_file, 'w') {|file| file.puts l10n_text}
+        locale_file_url = "https://raw.githubusercontent.com/asciidoctor/asciidoctor/master/data/locale/#{locale_file}"
+
+        if not File.exist?(locale_file)
+          puts "Downloading locale attributes file #{locale_file_url} ..."
+          l10n_text = URI.open(locale_file_url).read
+          File.open(locale_file, 'w') { |file| file.puts l10n_text }
         else
           puts "Use existing file with locale attributes #{locale_file}"
         end
@@ -30,10 +32,10 @@ namespace :book do
       if version_string.empty?
         version_string = '0'
       end
-      
+
       date_string = Time.now.strftime("%d.%m.%Y")
       params = "--attribute revnumber='#{version_string}' --attribute revdate='#{date_string}' --attribute lang=#{lang} "
-      
+
       puts "Generating contributors list"
       `git shortlog -s | grep -v -E "(Straub|Chacon|dependabot)" | cut -f 2- | column -c 96 > book/contributors.txt`
 

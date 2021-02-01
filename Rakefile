@@ -16,7 +16,7 @@ namespace :book do
       begin
         locale_file = "attributes-#{lang}.adoc"
           if not File.exist?(locale_file)
-          puts "Downloading locale attributes file #{lang_file} from asciidoc repo..."
+          puts "Downloading locale attributes file #{locale_file} from asciidoc repo..."
           l10n_text = URI.open("https://raw.githubusercontent.com/asciidoctor/asciidoctor/master/data/locale/#{locale_file}").read
           File.open(locale_file, 'w') {|file| file.puts l10n_text}
         else
@@ -30,10 +30,10 @@ namespace :book do
       if version_string.empty?
         version_string = '0'
       end
-      
+
       date_string = Time.now.strftime("%d.%m.%Y")
       params = "--attribute revnumber='#{version_string}' --attribute revdate='#{date_string}' --attribute lang=#{lang} "
-      
+
       puts "Generating contributors list"
       `git shortlog -s | grep -v -E "(Straub|Chacon|dependabot)" | cut -f 2- | column -c 96 > book/contributors.txt`
 
@@ -50,7 +50,7 @@ namespace :book do
 
       puts " -- Validate Epub output file progit.epub"
       exec_or_raise('epubcheck progit.epub')
-      
+
       # Commented out the .mobi file creation because the kindlegen dependency is not available.
       # For more information on this see: #1496.
       # This is a (hopefully) temporary fix until upstream asciidoctor-epub3 is fixed and we can offer .mobi files again.

@@ -1,5 +1,6 @@
 language: ruby
-sudo: false
+os: linux
+dist: bionic
 git:
   depth: false
 cache: bundler
@@ -16,10 +17,10 @@ deploy:
   - progit*.mobi
   - progit*.pdf
   - progit*.html
-  skip_cleanup: true
+  cleanup: false
   on:
     tags: true
-  api-key: $GITHUB_API_TOKEN
+  token: $GITHUB_API_TOKEN
 branches:
   only:
   - master

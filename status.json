@@ -4,17 +4,17 @@
   "maintainers": [""],
   "files": {
     "01-introduction": {
-      "1-introduction.asc": 100,
+      "ch01-getting-started.asc": 100,
       "sections/about-version-control.asc": 100,
-      "sections/basics.asc": 100,
       "sections/command-line.asc": 100,
       "sections/first-time-setup.asc": 100,
       "sections/help.asc": 100,
       "sections/history.asc": 100,
-      "sections/installing.asc": 100
+      "sections/installing.asc": 100,
+      "sections/what-is-git.asc": 100
     },
     "02-git-basics": {
-      "1-git-basics.asc": 100,
+      "ch02-git-basics-chapter.asc": 100,
       "sections/aliases.asc": 100,
       "sections/getting-a-repository.asc": 100,
       "sections/recording-changes.asc": 100,
@@ -24,7 +24,7 @@
       "sections/viewing-history.asc": 100
     },
     "03-git-branching": {
-      "1-git-branching.asc": 100,
+      "ch03-git-branching.asc": 100,
       "sections/basic-branching-and-merging.asc": 100,
       "sections/branch-management.asc": 100,
       "sections/nutshell.asc": 100,
@@ -33,7 +33,7 @@
       "sections/workflows.asc": 100
     },
     "04-git-server": {
-      "1-git-server.asc": 100,
+      "ch04-git-on-the-server.asc": 100,
       "sections/generating-ssh-key.asc": 100,
       "sections/git-daemon.asc": 100,
       "sections/git-on-a-server.asc": 100,
@@ -45,13 +45,13 @@
       "sections/smart-http.asc": 100
     },
     "05-distributed-git": {
-      "1-distributed-git.asc": 100,
+      "ch05-distributed-git.asc": 100,
       "sections/contributing.asc": 100,
       "sections/distributed-workflows.asc": 100,
       "sections/maintaining.asc": 100
     },
     "06-github": {
-      "1-github.asc": 80,
+      "ch06-github.asc": 80,
       "sections/1-setting-up-account.asc": 100,
       "sections/2-contributing.asc": 100,
       "sections/3-maintaining.asc": 100,
@@ -59,7 +59,7 @@
       "sections/5-scripting.asc": 0
     },
     "07-git-tools": {
-      "1-git-tools.asc": 100,
+      "ch07-git-tools.asc": 100,
       "sections/advanced-merging.asc": 100,
       "sections/bundling.asc": 100,
       "sections/credentials.asc": 100,
@@ -77,19 +77,18 @@
       "sections/subtree-merges.asc": 100
     },
     "08-customizing-git": {
-      "1-customizing-git.asc": 100,
+      "ch08-customizing-git.asc": 100,
       "sections/attributes.asc": 100,
       "sections/config.asc": 100,
       "sections/hooks.asc": 100,
       "sections/policy.asc": 100
     },
     "09-git-and-other-scms": {
-      "1-git-and-other-scms.asc": 90,
+      "ch09-git-and-other-systems.asc": 90,
       "sections/client-bzr.asc": 100,
       "sections/client-hg.asc": 100,
       "sections/client-p4.asc": 90,
       "sections/client-svn.asc": 90,
-      "sections/client-tfs.asc": 90,
       "sections/import-bzr": 100,
       "sections/import-custom.asc": 90,
       "sections/import-hg.asc": 100,
@@ -97,7 +96,7 @@
       "sections/import-svn.asc": 90
     },
     "10-git-internals": {
-      "1-git-internals.asc": 100,
+      "ch10-git-internals.asc": 100,
       "sections/environment.asc": 100,
       "sections/maintenance.asc": 100,
       "sections/objects.asc": 100,
@@ -120,7 +119,7 @@
       "sections/zsh.asc": 100
     },
     "B-embedding-git": {
-      "1-embedding-git.asc": 100,
+      "B-embedding-git-in-your-applications.asc": 100,
       "sections/command-line.asc": 100,
       "sections/dulwich.asc": 100,
       "sections/go-git.asc": 100,

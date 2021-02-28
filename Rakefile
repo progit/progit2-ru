@@ -44,7 +44,7 @@ namespace :book do
       puts " -- HTML output at progit.html"
 
       puts " -- Validate HTML file progit.html"
-      exec_or_raise('htmlproofer --check-html progit.html')
+      exec_or_raise('htmlproofer --check-html --disable-external progit.html')
 
       puts "Converting to EPub..."
       `bundle exec asciidoctor-epub3 #{params} progit.asc`

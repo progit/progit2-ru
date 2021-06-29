@@ -38,7 +38,7 @@ namespace :book do
 
   # Tasks list
   desc 'build basic book formats'
-  task :build => [:build_html, :build_epub, :build_pdf] do
+  task :build => [:build_html, :build_epub, :build_mobi, :build_pdf] do
     begin
       puts 'Validating generated files...'
       Rake::Task['book:check'].invoke
@@ -75,18 +75,9 @@ namespace :book do
   task :build_mobi do
     Rake::Task['book:prebuild'].invoke(96)
 
-    # Commented out the .mobi file creation because the kindlegen dependency is not available.
-    # For more information on this see: #1496.
-    # This is a (hopefully) temporary fix until upstream asciidoctor-epub3 is fixed and we can offer .mobi files again.
-
-    # puts "Converting to Mobi (kf8)..."
-    # `bundle exec asciidoctor-epub3 #{params} -a ebook-format=kf8 progit.asc`
-    # puts " -- Mobi output at progit.mobi"
-
-    # FIXME: If asciidoctor-epub3 supports Mobi again, uncomment these lines below
-    puts "Converting to Mobi isn't supported yet."
-    puts "For more information see issue #1496 at https://github.com/progit/progit2/issues/1496."
-    exit(127)
+    puts 'Converting to Mobi (kf8)...'
+    `bundle exec asciidoctor-epub3 #{params} -a ebook-format=kf8 progit.asc`
+    puts ' -- Mobi output at progit.mobi'
   end
 
   desc 'build PDF format'
@@ -126,7 +117,7 @@ namespace :book do
     begin
       puts 'Removing downloaded and generated files'
 
-      FileList[locale_file, 'book/contributors.txt', 'progit.html', 'progit.epub', 'progit.pdf'].each do |file|
+      FileList[locale_file, 'book/contributors.txt', 'progit.html', 'progit.epub', 'progit.pdf', 'progit.mobi'].each do |file|
         rm file
         rescue Errno::ENOENT
       end

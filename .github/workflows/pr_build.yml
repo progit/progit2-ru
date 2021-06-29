@@ -3,6 +3,8 @@ name: Pull Request Flow
 on:
   pull_request:
     branches: [ master ]
+    
+  workflow_dispatch:
 
 jobs:
   build:

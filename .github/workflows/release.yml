@@ -23,6 +23,12 @@ jobs:
           echo "New tag name: 2.1.${PATCH}"
           echo "::set-output name=tagname::2.1.${PATCH}"
 
+      - name: Generate change log
+        id: release-changelog
+        uses: mikepenz/release-changelog-builder-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -39,3 +45,4 @@ jobs:
           tag: ${{ steps.compute-tag.outputs.tagname }}
           commit: master
           artifacts: './progit.epub,./progit.mobi,./progit.pdf,./progit.html'
+          body: ${{ steps.release-changelog.outputs.changelog }}

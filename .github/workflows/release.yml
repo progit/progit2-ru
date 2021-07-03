@@ -39,18 +39,3 @@ jobs:
           tag: ${{ steps.compute-tag.outputs.tagname }}
           commit: master
           artifacts: './progit.epub,./progit.mobi,./progit.pdf,./progit.html'
-          
-      - name: Generate Changelog
-        id: release-changelog
-        uses: mikepenz/release-changelog-builder-action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Set changelog to the release
-        uses: ncipollo/release-action@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ steps.compute-tag.outputs.tagname }}
-          commit: master
-          allowUpdates: true
-          body: ${{ steps.release-changelog.outputs.changelog }}

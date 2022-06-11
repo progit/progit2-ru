@@ -35,6 +35,7 @@ namespace :book do
     version_string = '0'
   end
   params = "--attribute revnumber='#{version_string}' --attribute revdate='#{date_string}' --attribute lang=#{lang} "
+  ignore_urls = "'https://developer.github.com','https://developer.github.com/webhooks/','https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent','https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit'"
 
   # Tasks list
   desc 'build basic book formats'
@@ -96,7 +97,7 @@ namespace :book do
     end
 
     puts ' -- Validate HTML file progit.html'
-    exec_or_raise('bundle exec htmlproofer --check-html progit.html')
+    exec_or_raise("bundle exec htmlproofer --url-ignore #{ignore_urls} --check-html progit.html")
   end
 
   desc 'check EPUB book'

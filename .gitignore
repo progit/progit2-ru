@@ -9,6 +9,7 @@ Gemfile.lock
 *.pdf
 *.pdfmarks
 *.epub
+*.fb2.zip
 *-kf8.epub
 *.mobi
 contributors.txt

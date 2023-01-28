@@ -39,7 +39,7 @@ namespace :book do
 
   # Tasks list
   desc 'build basic book formats'
-  task :build => [:build_html, :build_epub, :build_mobi, :build_pdf] do
+  task :build => [:build_html, :build_epub, :build_fb2, :build_mobi, :build_pdf] do
     begin
       puts 'Validating generated files...'
       Rake::Task['book:check'].invoke
@@ -70,6 +70,15 @@ namespace :book do
     puts 'Converting to EPUB...'
     `bundle exec asciidoctor-epub3 #{params} progit.asc`
     puts ' -- EPUB output at progit.epub'
+  end
+
+  desc 'build FB2 format'
+  task :build_fb2 do
+    Rake::Task['book:prebuild'].invoke(96)
+
+    puts 'Converting to FB2...'
+    `bundle exec asciidoctor-fb2 #{params} progit.asc`
+    puts ' -- FB2 output at progit.fb2.zip'
   end
 
   desc 'build Mobi format'
@@ -118,7 +127,7 @@ namespace :book do
     begin
       puts 'Removing downloaded and generated files'
 
-      FileList[locale_file, 'book/contributors.txt', 'progit.html', 'progit.epub', 'progit.pdf', 'progit.mobi'].each do |file|
+      FileList[locale_file, 'book/contributors.txt', 'progit.html', 'progit.epub', 'progit.fb2.zip' 'progit.pdf', 'progit.mobi'].each do |file|
         rm file
         rescue Errno::ENOENT
       end

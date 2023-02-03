@@ -48,7 +48,7 @@ namespace :book do
 
   desc 'prepare necessary data to start build'
   task :prebuild, [:column_size] do |t, args|
-    args.with_defaults(:column_size => 96)
+    args.with_defaults(:column_size => 72)
 
     download_locale(locale_file)
     generate_contributors_list(args.column_size)
@@ -56,7 +56,7 @@ namespace :book do
 
   desc 'build HTML format'
   task :build_html do
-    Rake::Task['book:prebuild'].invoke(96)
+    Rake::Task['book:prebuild'].invoke(72)
 
     puts 'Converting to HTML...'
     `bundle exec asciidoctor #{params} -a data-uri progit.asc`
@@ -74,7 +74,7 @@ namespace :book do
 
   desc 'build FB2 format'
   task :build_fb2 do
-    Rake::Task['book:prebuild'].invoke(96)
+    Rake::Task['book:prebuild'].invoke(48)
 
     puts 'Converting to FB2...'
     `bundle exec asciidoctor-fb2 #{params} progit.asc`
@@ -83,7 +83,7 @@ namespace :book do
 
   desc 'build Mobi format'
   task :build_mobi do
-    Rake::Task['book:prebuild'].invoke(96)
+    Rake::Task['book:prebuild'].invoke(48)
 
     puts 'Converting to Mobi (kf8)...'
     `bundle exec asciidoctor-epub3 #{params} -a ebook-format=kf8 progit.asc`
@@ -92,7 +92,7 @@ namespace :book do
 
   desc 'build PDF format'
   task :build_pdf do
-    Rake::Task['book:prebuild'].invoke(88)
+    Rake::Task['book:prebuild'].invoke(72)
 
     puts 'Converting to PDF... (this one takes a while)'
     `bundle exec asciidoctor-pdf #{params} progit.asc 2>/dev/null`

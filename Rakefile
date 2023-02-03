@@ -77,7 +77,7 @@ namespace :book do
     Rake::Task['book:prebuild'].invoke(48)
 
     puts 'Converting to FB2...'
-    `bundle exec asciidoctor-fb2 #{params} progit.asc`
+    `bundle exec asciidoctor-fb2 #{params} progit.asc --trace --verbose`
     puts ' -- FB2 output at progit.fb2.zip'
   end
 

@@ -26,10 +26,10 @@ jobs:
       - name: Build Book
         run: bundle exec rake book:build
 
-      - name: 'Upload Artifact'
+      - name: 'Save Artifacts'
         uses: actions/upload-artifact@v3
         with:
-          name: Buikd Artifacts
+          name: Build Artifacts
           path: |
             book/contributors.txt
             attributes-ru.adoc

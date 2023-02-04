@@ -2,6 +2,7 @@ output
 .DS_Store
 .vscode
 .bundle
+.vendor
 
 # build artifacts
 Gemfile.lock

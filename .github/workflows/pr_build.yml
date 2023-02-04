@@ -29,6 +29,13 @@ jobs:
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v3
         with:
-          name: contributors.txt
-          path: book/contributors.txt
+          name: Buikd Artifacts
+          path: |
+            book/contributors.txt
+            attributes-ru.adoc
+            progit.epub
+            progit.fb2.zip
+            progit.mobi
+            progit.pdf
+            progit.html
           retention-days: 5

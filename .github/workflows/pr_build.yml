@@ -10,7 +10,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Install Utils
+        run: sudo apt-get install -y bsdmainutils
+
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -20,3 +25,10 @@ jobs:
 
       - name: Build Book
         run: bundle exec rake book:build
+
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v3
+        with:
+          name: contributors.txt
+          path: book/contributors.txt
+          retention-days: 5

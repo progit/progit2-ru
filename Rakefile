@@ -10,7 +10,7 @@ namespace :book do
 
   def generate_contributors_list(column_size)
     # Generating preformatted contributors list...
-    `git shortlog -s | grep -v -E "(Straub|Chacon|dependabot)" | cut -f 2- | column -c #{column_size} > book/contributors.txt`
+    `git shortlog -s HEAD | grep -v -E "(Straub|Chacon|dependabot)" | cut -f 2- | column -c #{column_size} > book/contributors.txt`
   end
 
   def download_locale(locale_file)

@@ -1,0 +1,19 @@
+version: 2
+updates:
+  # Maintain dependencies for Ruby
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "daily" # Checks on Monday through Friday.
+
+  # Maintain GitHub Action runners
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily" # Checks on Monday through Friday.
+
+    # Set default reviewer and labels
+    reviewers:
+      - "Morganov"
+    labels:
+      - "dependabot"

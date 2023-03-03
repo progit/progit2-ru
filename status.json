@@ -51,12 +51,12 @@
       "sections/maintaining.asc": 100
     },
     "06-github": {
-      "ch06-github.asc": 80,
+      "ch06-github.asc": 100,
       "sections/1-setting-up-account.asc": 100,
       "sections/2-contributing.asc": 100,
       "sections/3-maintaining.asc": 100,
       "sections/4-managing-organization.asc": 100,
-      "sections/5-scripting.asc": 0
+      "sections/5-scripting.asc": 100
     },
     "07-git-tools": {
       "ch07-git-tools.asc": 100,

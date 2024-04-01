@@ -35,7 +35,7 @@ namespace :book do
     version_string = '0'
   end
   params = "--attribute revnumber='#{version_string}' --attribute revdate='#{date_string}' --attribute lang=#{lang} "
-  ignore_urls = "'https://developer.github.com','https://developer.github.com/webhooks/','https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent','https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit','https://www.mercurial-scm.org/'"
+  ignore_urls = "'https://developer.github.com','https://developer.github.com/webhooks/','https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent','https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit','https://www.mercurial-scm.org/','https://bazaar.canonical.com','http://doc.bazaar.canonical.com/bzr.2.7/en/user-reference/ignore-help.html'"
 
   # Tasks list
   desc 'build basic book formats'

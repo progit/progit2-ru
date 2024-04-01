@@ -24,7 +24,7 @@ jobs:
           LASTPATCH=$(git describe --tags | cut -d- -f1 | cut -d. -f3)
           PATCH=$(($LASTPATCH+1))
           echo "New tag name: 2.1.${PATCH}"
-          echo "::set-output name=tagname::2.1.${PATCH}"
+          echo "tagname=2.1.${PATCH}" >> "$GITHUB_OUTPUT"
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1

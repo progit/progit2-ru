@@ -13,7 +13,7 @@ jobs:
       - name: Install Utils
         run: sudo apt-get install -y bsdmainutils
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -29,7 +29,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0
+          ruby-version: 3.1
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
       - name: Build release assets

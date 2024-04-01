@@ -106,7 +106,7 @@ namespace :book do
     end
 
     puts ' -- Validate HTML file progit.html'
-    exec_or_raise("bundle exec htmlproofer --url-ignore #{ignore_urls} --check-html progit.html")
+    exec_or_raise("bundle exec htmlproofer --ignore-urls #{ignore_urls} --no-enforce-https --no-check-external-hash progit.html")
   end
 
   desc 'check EPUB book'

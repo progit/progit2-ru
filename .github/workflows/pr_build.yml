@@ -30,7 +30,7 @@ jobs:
         run: bundle exec rake book:check
 
       - name: 'Save Artifacts'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v6
         with:
           name: Build Artifacts
           path: |
@@ -41,4 +41,4 @@ jobs:
             progit.mobi
             progit.pdf
             progit.html
-          retention-days: 5
+          retention-days: 7

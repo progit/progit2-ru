@@ -26,6 +26,9 @@ jobs:
       - name: Build Book
         run: bundle exec rake book:build
 
+      - name: Validate Book
+        run: bundle exec rake book:check
+
       - name: 'Save Artifacts'
         uses: actions/upload-artifact@v3
         with:

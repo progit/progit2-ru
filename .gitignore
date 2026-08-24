@@ -15,3 +15,7 @@ Gemfile.lock
 *.mobi
 contributors.txt
 attributes-*
+
+# vim artifacts
+.*.un~
+*.un~
